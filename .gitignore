@@ -1,0 +1,69 @@
+# IDE
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.claude-code-agent/
+
+# Virtual environment
+.venv/
+venv/
+
+# IDE
+.vscode/
+
+# Env
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+my_project
+
+# Environment files and local credentials
+.env.*
+!.env.example
+!.env.sample
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+token.json
+.netrc
+.npmrc
+.pypirc
+id_rsa*
+id_ed25519*
+
+# Local agent configuration, sessions, and databases
+**/.claude/settings.json
+**/.claude/settings.local.json
+**/.claude/mcp/settings.json
+.mcp.json
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.log
+out.txt
+/output/
+
+# Dependency caches and generated artifacts
+node_modules/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.zip
+*.7z
+*.tar
+*.tar.gz

@@ -1,0 +1,44 @@
+[project]
+name = "content-builder-agent"
+version = "0.1.0"
+description = "A content writer agent configured entirely through files on disk"
+requires-python = ">=3.11"
+dependencies = [
+    "deepagents>=0.6.8",
+    "fastapi>=0.138.2",
+    "uvicorn[standard]>=0.49.0",
+    "huggingface-hub>=0.26.0",
+    "langchain-deepseek>=1.1.0",
+    "pillow>=12.2.0",
+    "pymysql>=1.1.0",
+    "pyyaml>=6.0.3",
+    "sqlalchemy>=2.0",
+    "google-search-results>=2.4.2",
+    "langgraph-checkpoint-sqlite>=3.1.0",
+    "python-jose[cryptography]>=3.5.0",
+    "pymupdf>=1.28.0",
+    "chromadb>=1.5.9",
+    "langchain-text-splitters>=1.1.2",
+    "sentence-transformers>=5.6.0",
+    "langchain-community>=0.4.2",
+    "langchain-ollama>=0.1",
+    "aiosqlite>=0.20",
+    "python-pptx>=1.0.2",
+    "python-multipart>=0.0.32",
+    "alembic>=1",
+    "redis>=4,<6",
+    "asyncmy>=0.2",
+    "sqlglot>=30.30.0",
+    "mcp>=1.12,<2",
+    "langchain-mcp-adapters>=0.1,<0.3",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "httpx>=0.28"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["back/tests"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"

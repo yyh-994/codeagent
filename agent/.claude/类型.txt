@@ -1,0 +1,19 @@
+SystemMessage:type、content、id、name、
+HumanMessage:同上
+AIMessage：同上、tool_calls[ {name,args{},id} ]、response_metadata{ }
+ToolMessage：同上、tool_call_id关联AIMessage中tool_call的id
+
+interrupt时传给外部的payload={
+                "type": "plan_confirm",
+                "plan_content": plan_content,
+            }
+
+continue with传给agent的内容：
+同意——{"confirmed": True, "mode": mode}，
+拒绝——{"confirmed": False,"feedback": feedback or None,}
+
+预取的记忆列表：list[RelevantMemory]
+消耗记忆注入的内容：<system-reminder>...</system-reminder>
+
+skill.md:name、description、whentouse、body
+记忆文件.md:name、description、type、body

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://langgra.ph/schema.json",
+  "dependencies": ["."],
+  "graphs": {
+    "agent": "./back/agent/agents.py:create_content_writer"
+  },
+  "env": ".env"
+}

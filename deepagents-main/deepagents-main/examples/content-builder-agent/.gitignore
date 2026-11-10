@@ -1,0 +1,9 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+output/
+back/data/memory/*.db
+back/data/chroma_db/
+uploads/
+rag_indexed.json
